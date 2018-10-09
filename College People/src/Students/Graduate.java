@@ -20,4 +20,11 @@ public class Graduate extends Student {
 		this.adviser = adviser;
 	}
 	
+	public String printable() {
+		String retval = super.printable();
+		retval += "Year: " + year + "\n";
+		retval += "Adviser: " + adviser + "\n";
+		return retval;
+	}
+	
 }

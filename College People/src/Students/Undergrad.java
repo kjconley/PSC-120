@@ -27,4 +27,11 @@ public class Undergrad extends Student {
 		grade[nGrades++] = g;
 		return getGradeAve();
 	}
+	
+	public String printable() {
+		String retval = super.printable();
+		retval += "Year: " + year + "\n";
+		retval += "Average: " + getGradeAve() + "\n";
+		return retval;
+	}
 }
