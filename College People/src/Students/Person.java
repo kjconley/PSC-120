@@ -20,4 +20,9 @@ public class Person {
 		this.age = age;
 	}
 	
+	public String printable() {
+		String retval = "Name: " + name + "\n";
+		retval += "Age: " + age + "\n";
+		return retval;
+	}
 }

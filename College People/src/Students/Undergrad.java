@@ -3,7 +3,16 @@ package Students;
 public class Undergrad extends Student {
 	private int[] grade;
 	private int nGrades;
+	protected Year year;
 
+	public int getYear() {
+		return year.ordinal() + 1;
+	}
+	
+	public void setYear(Year year) {
+		this.year = year;
+	}
+	
 	public Undergrad() {
 		grade = new int[5];
 		nGrades = 0;
