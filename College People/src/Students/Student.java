@@ -1,6 +1,6 @@
 package Students;
 
-public class Student extends Person {
+public class Student extends Person implements PrintablePerson {
 	protected int studentID;
 
 	public int getStudentID() {

@@ -1,6 +1,6 @@
 package Students;
 
-public class Person {
+public class Person implements PrintablePerson {
 	protected String name;
 	protected int age;
 	

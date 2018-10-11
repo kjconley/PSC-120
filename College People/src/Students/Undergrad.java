@@ -1,6 +1,6 @@
 package Students;
 
-public class Undergrad extends Student {
+public class Undergrad extends Student implements PrintablePerson {
 	private int[] grade;
 	private int nGrades;
 	protected Year year;

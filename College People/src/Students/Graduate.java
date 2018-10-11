@@ -1,6 +1,6 @@
 package Students;
 
-public class Graduate extends Student {
+public class Graduate extends Student implements PrintablePerson {
 	protected int year;
 	protected Person adviser;
 	
@@ -23,7 +23,7 @@ public class Graduate extends Student {
 	public String printable() {
 		String retval = super.printable();
 		retval += "Year: " + year + "\n";
-		retval += "Adviser: " + adviser + "\n";
+		retval += "Adviser: " + adviser.getName() + "\n";
 		return retval;
 	}
 	
